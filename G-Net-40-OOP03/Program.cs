@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
+using System.Net.Sockets;
 using System.Reflection.Metadata;
 using System.Security.Principal;
+using G_Net_40_OOP03.Classes;
 
 namespace G_Net_40_OOP03
 {
@@ -73,6 +75,48 @@ namespace G_Net_40_OOP03
             //---------------------------------------------------------------------------------------------------------
 
             #endregion
+            #endregion
+
+
+
+            #region Part 02 : Practical (Extending the Movie Ticket Booking System)
+
+           // a.Create a Cinema and open it.
+
+           // Projector projector = new Projector();
+           // var cinema1 = new Cienma("Cinema 1", projector);
+           // cinema1.OpenCinema(projector);
+
+           //// b.Create one of each ticket type(hardcoded data) and add them to the Cinema.
+
+           // var ticket1Standard = new StandardTicket("Inception", 120, "A-5"); 
+           // var ticket2VIP = new VIPTicket("Avengers", 200, true);
+           // var ticket3IMAX = new IMAXTicket("Dune", 180, false);
+
+           // cinema1.AddTicket(ticket1Standard);
+           // cinema1.AddTicket(ticket2VIP);
+           // cinema1.AddTicket(ticket3IMAX);
+
+           // //c.Print all tickets.
+           // cinema1.PrintAllTickets();
+
+
+           // //d.Print the total tickets sold using the method.
+           // Console.WriteLine("\n ======== Statistics ========");
+           // Console.WriteLine($"Total Tickets Created: {Ticket.GetTotalTickets()}\n");
+
+
+           // //e.Generate and print 2 booking references.
+           // Console.WriteLine($"Booking Ref 1: {BookingHelper.GenerateBookingReference()}");
+           // Console.WriteLine($"Booking Ref 2: {BookingHelper.GenerateBookingReference()}\n");
+
+           // //f.Calculate and print the group discount for a group of 5 tickets at 80 EGP each of them.
+           // Console.WriteLine($"Group Discount (5 tickets x 100 EGP): {BookingHelper.CalcGroupDiscount(5, 100)} EGP (10% Off)\n");
+
+
+           // // d.Close the Cinema.
+
+           // cinema1.CloseCinema(projector);
             #endregion
         }
     }
